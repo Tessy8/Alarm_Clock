@@ -1,0 +1,5 @@
+.LOG
+8:53 PM 12/06/2022
+DONE: 	Written LCD code
+	Created menu pages
+	Created display_time function
