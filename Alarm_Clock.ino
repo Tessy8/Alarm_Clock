@@ -70,6 +70,7 @@ void fourth_menu_page(){
 
 
 // displays the current time
+/**
 void display_time(){
   lcd_cmd(0x80);                                      // Cursor at first line
   lcd_string(_time, 8);                               // Output time
@@ -84,6 +85,7 @@ void display_time(){
   lcd_string(" | ", 3);
   lcd_string("ALARM", 5);
 }
+**/
 
 // sets the time
 void set_time(){
@@ -136,19 +138,19 @@ void loop() {
     first_menu_page();
     count = 1; 
   }
-  if (PINB & (1<<PINB4) && Count = 1){
+  if (PINB & (1<<PINB4) && count == 1){
       second_menu_page();
       count ++;
     }
-    if (PINB & (1<<PINB4) && Count = 2){
+    if (PINB & (1<<PINB4) && count == 2){
       third_menu_page();
       count ++;
     }
-    if (PINB & (1<<PINB4) && Count = 3){
+    if (PINB & (1<<PINB4) && count == 3){
       fourth_menu_page();
       count ++;
     }
-    if (PINB & (1<<PINB4) && Count = 4){
+    if (PINB & (1<<PINB4) && count == 4){
       first_menu_page();
       count = 1;
     }
